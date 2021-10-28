@@ -21,6 +21,6 @@ A fun, and exciting game to play
 * **Shoot**: Spacebar
 
 ## Credits
-* [_freecodecamp_](https://www.youtube.com/redirect?event=video_description&  redir_token=QUFFLUhqa2pNaVhGalhBb0dPM1hZMDJ5TGtGT3g3eWx2QXxBQ3Jtc0trc1Y5emlqQy1KdW43YnJ3bU9LN0VxNjNYUzlVY0tBYS1GNnR0dGFJODN0dDBLTnBDLTJOaTJwdXhQdU1fc3JDQmI4MkVXTHQtZThBN0J5bHVZR25PekpKLW1ZX1lxV1RpME0wZmJqdEhKeWhlQ1BYRQ&q=https%3A%2F%2Fgithub.com%2Fattreyabhatt%2FSpace-Invaders-Pygame)
+* [_freecodecamp_](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 * [_flat icons_](https://www.flaticon.com/)
 * [_Zapsplat_](https://www.zapsplat.com/)
