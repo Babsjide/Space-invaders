@@ -37,8 +37,8 @@ num_of_enemy = 15
 
 for i in range(num_of_enemy):
     enemy_bug.append(pg.image.load('robot.png'))
-    enemy_x_axis.append(random.randint(0, 780))
-    enemy_y_axis.append(random.randint(80, 150))
+    enemy_x_axis.append(random.randint(0, 736))
+    enemy_y_axis.append(random.randint(80, 100))
     enemy_x_change.append(0.3)
     enemy_y_change.append(30)
 
@@ -99,7 +99,7 @@ def bullet(x, y):
 
 def collision(enemy_x_axis, enemy_y_axis, bullet_x_axis, bullet_y_axis):
     distance = (((bullet_x_axis - enemy_x_axis) ** 2) + ((bullet_y_axis - enemy_y_axis) ** 2)) ** 0.5
-    if distance < 10:
+    if distance < 15:
         return True
     else:
         return False
@@ -165,7 +165,7 @@ while running:
         if enemy_x_axis[i] < 0:
             enemy_x_change[i] = 0.5
             enemy_y_axis[i] += enemy_y_change[i]
-        elif enemy_x_axis[i] >= 776:
+        elif enemy_x_axis[i] >= 736:
             enemy_x_change[i] = -0.5
             enemy_y_axis[i] += enemy_y_change[i]
 
@@ -180,8 +180,8 @@ while running:
             score_value += 5
             print('Eliminated: ', enemy_elim)
             print('Score: ', score_value)
-            enemy_x_axis[i] = random.randint(0, 800)
-            enemy_y_axis[i] = random.randint(80, 150)
+            enemy_x_axis[i] = random.randint(0, 736)
+            enemy_y_axis[i] = random.randint(80, 100)
 
         enemy(enemy_x_axis[i], enemy_y_axis[i], i)
 
