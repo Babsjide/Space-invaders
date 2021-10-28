@@ -62,7 +62,6 @@ font_elim = pg.font.Font('freesansbold.ttf', 32)
 elim_x_axis = 10
 elim_y_axis = 40
 
-
 # Game Over Font
 over = pg.font.Font('freesansbold.ttf', 256)
 over_x_axis = 300
@@ -106,7 +105,7 @@ def collision(enemy_x_axis, enemy_y_axis, bullet_x_axis, bullet_y_axis):
         return False
 
 
-num_bullet = 3
+# num_bullet = 3
 
 # Game loop
 """We create a loop to keep the program running until the exit button is clicked"""
