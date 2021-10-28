@@ -49,13 +49,19 @@ bullet_y_axis = 520
 bullet_x_change = 0
 bullet_y_change = 4.5
 bullet_state = 'ready'
-enemy_eliminated = 0
 
 # Score
 score_value = 0
 font = pg.font.Font('freesansbold.ttf', 32)
 text_x_axis = 10
 test_y_axis = 10
+
+# Eliminated
+enemy_elim = 0
+font_elim = pg.font.Font('freesansbold.ttf', 32)
+elim_x_axis = 10
+elim_y_axis = 40
+
 
 # Game Over Font
 over = pg.font.Font('freesansbold.ttf', 256)
@@ -71,6 +77,11 @@ def game_over():
 def score_func(x, y):
     score = font.render("Score: {}".format(score_value), True, (0, 255, 0))
     screen.blit(score, (x, y))
+
+
+def eliminated(x, y):
+    eliminate = font.render("Eliminated: {}".format(enemy_elim), True, (0, 255, 255))
+    screen.blit(eliminate, (x, y))
 
 
 def player(x, y):
@@ -166,9 +177,9 @@ while running:
             collision_sound.play()
             bullet_y_axis = 520
             bullet_state = 'ready'
-            enemy_eliminated += 1
+            enemy_elim += 1
             score_value += 5
-            print('Eliminated: ', enemy_eliminated)
+            print('Eliminated: ', enemy_elim)
             print('Score: ', score_value)
             enemy_x_axis[i] = random.randint(0, 800)
             enemy_y_axis[i] = random.randint(80, 150)
@@ -185,5 +196,5 @@ while running:
 
     player(player_x_axis, player_y_axis)
     score_func(text_x_axis, test_y_axis)
-
+    eliminated(elim_x_axis, elim_y_axis)
     pg.display.update()
